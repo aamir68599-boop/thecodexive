@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TheCodexive | Digital Marketing Agency</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -13,30 +13,31 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:'Inter',sans-serif;
 scroll-behavior:smooth;
 }
 
 body{
-background:#f8fafc;
-color:#0f172a;
-}
-
-/* NAVBAR */
-
-header{
-background:#ffffff;
-padding:18px 0;
-box-shadow:0 2px 10px rgba(0,0,0,0.05);
-position:sticky;
-top:0;
-z-index:1000;
+background:#f9fafb;
+color:#111827;
+line-height:1.6;
 }
 
 .container{
 width:90%;
 max-width:1200px;
 margin:auto;
+}
+
+/* HEADER */
+
+header{
+background:#ffffff;
+padding:20px 0;
+box-shadow:0 2px 15px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 .nav{
@@ -51,33 +52,43 @@ font-weight:700;
 color:#2563eb;
 }
 
+.nav-links{
+display:flex;
+align-items:center;
+gap:25px;
+}
+
 .nav-links a{
-margin-left:25px;
 text-decoration:none;
-color:#0f172a;
+color:#111827;
 font-weight:500;
 }
 
-.phone{
+.call-btn{
 background:#2563eb;
 color:#fff;
-padding:8px 16px;
-border-radius:5px;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
 font-size:14px;
 }
 
 /* HERO */
 
 .hero{
-background:linear-gradient(135deg,#2563eb,#1e3a8a);
-color:#fff;
 padding:100px 0;
 text-align:center;
+background:linear-gradient(135deg,#2563eb,#1e40af);
+color:#fff;
 }
 
 .hero h1{
 font-size:48px;
+max-width:800px;
+margin:auto;
 margin-bottom:20px;
+font-weight:700;
 }
 
 .hero p{
@@ -90,17 +101,13 @@ opacity:0.9;
 background:#fff;
 color:#2563eb;
 padding:14px 30px;
-border-radius:5px;
+border-radius:6px;
 text-decoration:none;
 font-weight:600;
-transition:0.3s;
+display:inline-block;
 }
 
-.btn-primary:hover{
-background:#e2e8f0;
-}
-
-/* SECTIONS */
+/* SECTION */
 
 section{
 padding:80px 0;
@@ -110,20 +117,22 @@ padding:80px 0;
 text-align:center;
 font-size:32px;
 margin-bottom:50px;
-color:#1e3a8a;
+font-weight:700;
 }
+
+/* SERVICES */
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
 }
 
 .card{
 background:#fff;
 padding:30px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.05);
 transition:0.3s;
 }
 
@@ -139,42 +148,40 @@ color:#2563eb;
 /* WHY */
 
 .why{
-background:#f1f5f9;
+background:#f3f4f6;
+}
+
+.why-list{
+max-width:700px;
+margin:auto;
+}
+
+.why-list li{
+padding:12px 0;
+border-bottom:1px solid #e5e7eb;
 }
 
 /* RESULTS */
+
+.results{
+background:#ffffff;
+}
 
 .results-box{
 display:flex;
 justify-content:space-around;
 flex-wrap:wrap;
-gap:20px;
+gap:30px;
 text-align:center;
 }
 
 .results-box div{
-background:#fff;
 padding:30px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
-width:250px;
 }
 
 .results-box h3{
-font-size:36px;
+font-size:40px;
 color:#2563eb;
-}
-
-/* OFFER */
-
-.offer{
-background:#1e3a8a;
-color:#fff;
-text-align:center;
-}
-
-.offer h2{
-margin-bottom:15px;
 }
 
 /* CTA */
@@ -183,10 +190,11 @@ margin-bottom:15px;
 background:#2563eb;
 color:#fff;
 text-align:center;
+padding:70px 0;
 }
 
-.cta p{
-margin:20px 0;
+.cta h2{
+margin-bottom:20px;
 }
 
 /* CONTACT */
@@ -201,16 +209,17 @@ gap:15px;
 
 .contact input,
 .contact textarea{
-padding:12px;
-border:1px solid #ccc;
-border-radius:5px;
+padding:14px;
+border:1px solid #d1d5db;
+border-radius:6px;
 }
 
 .contact button{
 background:#2563eb;
 color:#fff;
 border:none;
-padding:12px;
+padding:14px;
+border-radius:6px;
 font-weight:600;
 cursor:pointer;
 }
@@ -218,13 +227,13 @@ cursor:pointer;
 /* FOOTER */
 
 footer{
-background:#0f172a;
+background:#111827;
 color:#fff;
 text-align:center;
-padding:20px 0;
+padding:25px 0;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -232,11 +241,11 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:#fff;
-padding:12px 18px;
+padding:14px 20px;
 border-radius:50px;
 text-decoration:none;
 font-weight:600;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 /* MOBILE */
@@ -244,10 +253,15 @@ box-shadow:0 5px 15px rgba(0,0,0,0.2);
 @media(max-width:768px){
 
 .hero h1{
-font-size:32px;
+font-size:30px;
 }
 
 .nav{
+flex-direction:column;
+gap:15px;
+}
+
+.nav-links{
 flex-direction:column;
 gap:15px;
 }
@@ -264,16 +278,15 @@ gap:15px;
 <div class="nav-links">
 <a href="#services">Services</a>
 <a href="#why">Why Us</a>
-<a href="#results">Results</a>
-<a href="tel:+919876543210" class="phone">📞 +91 98765 43210</a>
+<a href="#contact" class="call-btn">📞 +1 475-237-7127</a>
 </div>
 </div>
 </header>
 
 <section class="hero">
 <div class="container">
-<h1>We Help Businesses Grow With Smart Digital Marketing</h1>
-<p>SEO, Social Media & Paid Ads Strategies That Generate Real Results.</p>
+<h1>Professional Digital Marketing That Drives Real Business Growth</h1>
+<p>We help brands increase traffic, generate leads and boost revenue with data-driven strategies.</p>
 <a href="#contact" class="btn-primary">Book Free Consultation</a>
 </div>
 </section>
@@ -283,15 +296,15 @@ gap:15px;
 <div class="container grid">
 <div class="card">
 <h3>SEO Optimization</h3>
-<p>Rank higher on Google & drive organic traffic.</p>
+<p>Improve search rankings & drive organic traffic to your website.</p>
 </div>
 <div class="card">
 <h3>Social Media Marketing</h3>
-<p>Engage your audience & grow your brand.</p>
+<p>Build strong brand presence across major platforms.</p>
 </div>
 <div class="card">
-<h3>Google Ads</h3>
-<p>High-converting campaigns for instant leads.</p>
+<h3>Paid Advertising</h3>
+<p>High-converting ad campaigns that generate quality leads.</p>
 </div>
 <div class="card">
 <h3>Website Development</h3>
@@ -302,27 +315,40 @@ gap:15px;
 
 <section id="why" class="why">
 <h2 class="section-title">Why Choose TheCodexive?</h2>
-<div class="container grid">
-<div class="card"><h3>Result Driven</h3><p>We focus on measurable growth.</p></div>
-<div class="card"><h3>Affordable Pricing</h3><p>Premium service at competitive rates.</p></div>
-<div class="card"><h3>Dedicated Support</h3><p>Always available for your business needs.</p></div>
+<div class="container">
+<ul class="why-list">
+<li>✔ Result-Oriented Digital Strategies</li>
+<li>✔ Transparent Reporting & Analytics</li>
+<li>✔ Experienced Marketing Experts</li>
+<li>✔ Affordable & Scalable Solutions</li>
+<li>✔ Dedicated Client Support</li>
+</ul>
 </div>
 </section>
 
-<section id="results">
+<section class="results">
 <h2 class="section-title">Our Achievements</h2>
 <div class="container results-box">
-<div><h3>500+</h3><p>Projects Completed</p></div>
-<div><h3>300%</h3><p>Average ROI Growth</p></div>
-<div><h3>100+</h3><p>Happy Clients</p></div>
+<div>
+<h3>500+</h3>
+<p>Projects Completed</p>
+</div>
+<div>
+<h3>300%</h3>
+<p>Average ROI Growth</p>
+</div>
+<div>
+<h3>100+</h3>
+<p>Happy Clients</p>
+</div>
 </div>
 </section>
 
-<section class="offer">
+<section class="cta">
 <div class="container">
-<h2>🔥 Free Website Audit + Strategy Call</h2>
-<p>Limited Time Offer for New Clients</p>
-<a href="#contact" class="btn-primary">Claim Now</a>
+<h2>Ready to Grow Your Business?</h2>
+<p>Call us today at +1 475-237-7127 for a free strategy consultation.</p>
+<a href="tel:+14752377127" class="btn-primary">Call Now</a>
 </div>
 </section>
 
@@ -339,10 +365,10 @@ gap:15px;
 </section>
 
 <footer>
-<p>© 2026 TheCodexive | All Rights Reserved</p>
+<p>© 2026 TheCodexive. All Rights Reserved.</p>
 </footer>
 
-<a href="https://wa.me/919876543210" class="whatsapp">WhatsApp Us</a>
+<a href="https://wa.me/14752377127" class="whatsapp">Chat on WhatsApp</a>
 
 </body>
 </html>
