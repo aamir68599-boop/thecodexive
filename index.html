@@ -3,173 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TheCodexive | Digital Marketing Agency</title>
+<title>TheCodexive | Free Marketing Consultation</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Inter',sans-serif;
-scroll-behavior:smooth;
 }
 
 body{
-background:#f9fafb;
+background:linear-gradient(135deg,#1e3a8a,#2563eb);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
 color:#111827;
 }
 
 .container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-/* HEADER */
-
-header{
 background:#fff;
-padding:18px 0;
-box-shadow:0 2px 15px rgba(0,0,0,0.05);
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-.nav{
+width:95%;
+max-width:1100px;
 display:flex;
-justify-content:space-between;
-align-items:center;
+flex-wrap:wrap;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 20px 50px rgba(0,0,0,0.2);
 }
 
-.logo{
-font-size:24px;
-font-weight:700;
-color:#2563eb;
+/* LEFT SIDE */
+
+.left{
+flex:1;
+padding:60px 40px;
+background:#f8fafc;
 }
 
-.nav-links{
-display:flex;
-align-items:center;
-gap:25px;
+.left h1{
+font-size:38px;
+margin-bottom:20px;
+color:#1e3a8a;
 }
 
-.nav-links a{
-text-decoration:none;
-color:#111827;
-font-weight:500;
+.left p{
+margin-bottom:30px;
+font-size:16px;
+color:#374151;
 }
 
-.call-btn{
+.call-box{
 background:#2563eb;
 color:#fff;
-padding:10px 18px;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-}
-
-/* HERO */
-
-.hero{
-background:linear-gradient(135deg,#2563eb,#1e40af);
-color:#fff;
-padding:100px 0;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
 text-align:center;
 }
 
-.hero h1{
-font-size:44px;
-margin-bottom:20px;
+.call-box h2{
+font-size:22px;
+margin-bottom:10px;
 }
 
-.hero p{
-margin-bottom:30px;
-font-size:18px;
-}
-
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.btn-primary{
-background:#fff;
-color:#2563eb;
-padding:14px 30px;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-}
-
-.btn-call{
+.call-btn{
+display:inline-block;
 background:#111827;
 color:#fff;
 padding:14px 30px;
 border-radius:6px;
 text-decoration:none;
 font-weight:600;
+margin-top:10px;
 }
 
-/* SECTION */
+/* RIGHT SIDE FORM */
 
-section{
-padding:80px 0;
+.right{
+flex:1;
+padding:60px 40px;
 }
 
-.section-title{
-text-align:center;
-font-size:30px;
-margin-bottom:50px;
-font-weight:700;
+.right h2{
+margin-bottom:25px;
+font-size:26px;
+color:#1e3a8a;
 }
 
-/* SERVICES */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-.card{
-background:#fff;
-padding:30px;
-border-radius:12px;
-box-shadow:0 8px 25px rgba(0,0,0,0.05);
-}
-
-.card h3{
-margin-bottom:15px;
-color:#2563eb;
-}
-
-/* CONTACT FORM */
-
-.contact{
-background:#f3f4f6;
-}
-
-.contact form{
-max-width:600px;
-margin:auto;
+form{
 display:flex;
 flex-direction:column;
 gap:15px;
 }
 
-.contact input,
-.contact textarea{
+input, textarea{
 padding:14px;
 border:1px solid #d1d5db;
 border-radius:6px;
+font-size:14px;
 }
 
-.contact button{
+button{
 background:#2563eb;
 color:#fff;
 border:none;
@@ -177,147 +115,73 @@ padding:14px;
 border-radius:6px;
 font-weight:600;
 cursor:pointer;
+font-size:15px;
 }
 
-/* CTA STRIP */
+/* TRUST */
 
-.cta-strip{
-background:#111827;
-color:#fff;
-text-align:center;
-padding:40px 0;
+.trust{
+margin-top:25px;
+font-size:13px;
+color:#6b7280;
 }
 
-.cta-strip a{
-color:#fff;
-font-weight:600;
-text-decoration:none;
-background:#2563eb;
-padding:12px 25px;
-border-radius:6px;
-margin-left:15px;
-}
+/* MOBILE */
 
-/* FOOTER */
-
-footer{
-background:#111827;
-color:#fff;
-text-align:center;
-padding:20px 0;
-}
-
-/* STICKY MOBILE CALL BUTTON */
-
-.sticky-call{
-display:none;
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
-background:#2563eb;
-color:#fff;
-text-align:center;
-padding:15px 0;
-font-weight:600;
-text-decoration:none;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:30px;
-}
-
-.nav{
-flex-direction:column;
-gap:15px;
-}
-
-.nav-links{
+@media(max-width:900px){
+.container{
 flex-direction:column;
 }
-
-.sticky-call{
-display:block;
+.left, .right{
+padding:40px 25px;
 }
-
+.left h1{
+font-size:28px;
+}
 }
 
 </style>
 </head>
 <body>
 
-<header>
-<div class="container nav">
-<div class="logo">TheCodexive</div>
-<div class="nav-links">
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-<a href="tel:+14752377127" class="call-btn">📞 +1 475-237-7127</a>
-</div>
-</div>
-</header>
-
-<section class="hero">
 <div class="container">
-<h1>Get More Leads & Sales With Professional Digital Marketing</h1>
-<p>Call us now or fill out the form to receive a FREE strategy consultation.</p>
 
-<div class="hero-buttons">
-<a href="tel:+14752377127" class="btn-call">📞 Call Now</a>
-<a href="#contact" class="btn-primary">Get Free Quote</a>
+<div class="left">
+<h1>Get More Leads & Sales With Expert Digital Marketing</h1>
+<p>Call now for a FREE strategy consultation or fill out the form to get started today.</p>
+
+<div class="call-box">
+<h2>📞 Call Now</h2>
+<p><strong>+1 475-237-7127</strong></p>
+<a href="tel:+14752377127" class="call-btn">Call For Free Consultation</a>
 </div>
 
-</div>
-</section>
+<p><strong>Why Choose TheCodexive?</strong></p>
+<p>✔ Proven Results<br>
+✔ ROI Focused Strategies<br>
+✔ Transparent Reporting<br>
+✔ Fast Support</p>
 
-<section id="services">
-<h2 class="section-title">Our Services</h2>
-<div class="container grid">
-<div class="card">
-<h3>SEO Optimization</h3>
-<p>Rank higher and drive organic traffic.</p>
 </div>
-<div class="card">
-<h3>Paid Advertising</h3>
-<p>High-converting Google & Social ads.</p>
-</div>
-<div class="card">
-<h3>Social Media Marketing</h3>
-<p>Build brand awareness & engagement.</p>
-</div>
-<div class="card">
-<h3>Website Development</h3>
-<p>Modern websites built to convert.</p>
-</div>
-</div>
-</section>
 
-<section class="cta-strip">
-<h2>Ready To Grow Your Business?</h2>
-<p>Call +1 475-237-7127 Today</p>
-<a href="tel:+14752377127">Call Now</a>
-</section>
+<div class="right">
+<h2>Request Free Consultation</h2>
 
-<section id="contact" class="contact">
-<h2 class="section-title">Request Free Consultation</h2>
-<div class="container">
 <form onsubmit="alert('Thank you! We will contact you shortly.');">
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<input type="tel" placeholder="Your Phone Number" required>
-<textarea rows="5" placeholder="Tell us about your project"></textarea>
-<button type="submit">Submit & Get Free Strategy</button>
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<input type="tel" placeholder="Phone Number" required>
+<textarea rows="4" placeholder="Tell us about your business"></textarea>
+<button type="submit">Get My Free Strategy</button>
 </form>
+
+<p class="trust">
+We respect your privacy. Your information will never be shared.
+</p>
+
 </div>
-</section>
 
-<footer>
-<p>© 2026 TheCodexive. All Rights Reserved.</p>
-</footer>
-
-<a href="tel:+14752377127" class="sticky-call">📞 Call Now +1 475-237-7127</a>
+</div>
 
 </body>
 </html>
