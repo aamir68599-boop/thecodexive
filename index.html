@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Google Ads Expert | TheCodexive</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -13,31 +13,50 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Inter',sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f8fafc;
-color:#111827;
+color:#1f2937;
+background:#f9fafb;
 line-height:1.7;
 }
 
 .container{
-width:92%;
+width:90%;
 max-width:1100px;
 margin:auto;
 }
 
+/* HERO SECTION WITH BANNER */
+
 .hero{
-background:linear-gradient(135deg,#0f172a,#1e40af);
+position:relative;
+background:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
 color:#fff;
-padding:90px 0;
+padding:120px 0;
 text-align:center;
 }
 
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(15,23,42,0.75);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
 .hero h1{
-font-size:42px;
+font-size:44px;
 margin-bottom:20px;
+font-weight:700;
 }
 
 .hero p{
@@ -45,7 +64,6 @@ font-size:18px;
 max-width:750px;
 margin:auto;
 margin-bottom:30px;
-opacity:0.95;
 }
 
 .hero-buttons{
@@ -65,13 +83,15 @@ font-weight:600;
 }
 
 .btn-form{
-background:#fff;
+background:#ffffff;
 color:#1e40af;
 padding:15px 30px;
 border-radius:6px;
 text-decoration:none;
 font-weight:600;
 }
+
+/* SECTION */
 
 section{
 padding:80px 0;
@@ -82,27 +102,35 @@ text-align:center;
 font-size:30px;
 margin-bottom:40px;
 font-weight:700;
+color:#111827;
 }
 
 .text-content{
-max-width:900px;
+max-width:850px;
 margin:auto;
 font-size:16px;
-color:#374151;
+color:#4b5563;
 }
+
+/* BENEFITS GRID */
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 margin-top:40px;
 }
 
 .card{
-background:#fff;
+background:#ffffff;
 padding:30px;
 border-radius:10px;
 box-shadow:0 10px 25px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
 }
 
 .card h3{
@@ -110,17 +138,22 @@ margin-bottom:12px;
 color:#1e40af;
 }
 
+/* FORM SECTION */
+
 .form-section{
-background:#111827;
+background:#1e3a8a;
+color:#fff;
 padding:80px 0;
 }
 
-.form-container{
-background:#fff;
+.form-box{
+background:#ffffff;
+color:#111827;
 max-width:600px;
 margin:auto;
 padding:40px;
 border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
 form{
@@ -133,6 +166,7 @@ input, textarea{
 padding:14px;
 border:1px solid #d1d5db;
 border-radius:6px;
+font-size:14px;
 }
 
 button{
@@ -144,6 +178,17 @@ border-radius:6px;
 font-weight:600;
 cursor:pointer;
 }
+
+/* FOOTER */
+
+footer{
+background:#111827;
+color:#fff;
+text-align:center;
+padding:20px 0;
+}
+
+/* STICKY CALL MOBILE */
 
 .sticky-call{
 display:none;
@@ -160,18 +205,26 @@ text-decoration:none;
 }
 
 @media(max-width:768px){
-.hero h1{font-size:28px;}
-.sticky-call{display:block;}
+
+.hero h1{
+font-size:28px;
+}
+
+.sticky-call{
+display:block;
+}
+
 }
 
 </style>
 </head>
 <body>
 
+<!-- HERO -->
 <section class="hero">
-<div class="container">
-<h1>Google Ads Expert – Generate More Calls & High-Quality Leads</h1>
-<p>If you are investing in Google Ads but not seeing consistent results, you need a certified Google Ads expert who understands conversion strategy, keyword targeting, and ROI optimization. At TheCodexive, we build and manage data-driven campaigns designed to generate real business growth — not just clicks.</p>
+<div class="hero-content container">
+<h1>Certified Google Ads Expert – Get More Calls & Qualified Leads</h1>
+<p>Stop wasting money on underperforming ads. We create high-converting Google Ads campaigns designed to generate real ROI, more phone calls, and consistent leads for your business.</p>
 
 <div class="hero-buttons">
 <a href="tel:+14752377127" class="btn-call">📞 Call Now +1 475-237-7127</a>
@@ -180,47 +233,49 @@ text-decoration:none;
 </div>
 </section>
 
+<!-- CONTENT -->
 <section>
 <div class="container">
-<h2 class="section-title">Professional Google Ads Management</h2>
+<h2 class="section-title">Professional Google Ads Management Services</h2>
 
 <div class="text-content">
-<p>Our Google Ads management services are designed for businesses that want measurable results. We focus on high-intent keyword targeting, compelling ad copy, optimized landing pages, and accurate conversion tracking to ensure every dollar spent generates maximum return. Whether you are a local business looking for more calls or a national brand aiming to scale revenue, our structured campaign strategy helps you achieve consistent growth.</p>
+<p>At TheCodexive, we specialize in managing Google Ads campaigns that are built for performance. Our strategy focuses on targeting high-intent keywords, creating persuasive ad copy, optimizing landing pages, and implementing accurate conversion tracking. This ensures that every click has the highest possible chance of turning into a paying customer.</p>
 
-<p>We don’t believe in guesswork. Every campaign is built on research, competitor analysis, audience targeting, and continuous optimization. From search ads to display campaigns and remarketing strategies, we ensure your ads appear in front of the right audience at the right time. Our primary goal is simple — generate qualified leads and increase your revenue while lowering your cost per acquisition.</p>
+<p>Whether you are a local service provider, eCommerce brand, or growing company, our data-driven approach helps reduce cost per lead while increasing your return on investment. We continuously monitor performance, test new strategies, refine targeting, and scale campaigns that are delivering results.</p>
 
-<p>With transparent reporting and ongoing performance improvements, you always know exactly how your campaigns are performing. We track calls, form submissions, and conversions so your marketing budget works efficiently.</p>
+<p>Our goal is simple — help you generate more phone calls, more form inquiries, and more revenue from your advertising budget.</p>
 </div>
 
 <div class="grid">
 <div class="card">
-<h3>Advanced Keyword Strategy</h3>
-<p>We target high-converting search terms that drive qualified traffic.</p>
+<h3>Advanced Keyword Research</h3>
+<p>We target keywords that drive real buying intent traffic.</p>
 </div>
 
 <div class="card">
-<h3>Conversion Tracking Setup</h3>
-<p>Track calls, form submissions & ROI accurately.</p>
+<h3>Conversion Tracking</h3>
+<p>Track calls and form submissions accurately for maximum ROI.</p>
 </div>
 
 <div class="card">
-<h3>Continuous Optimization</h3>
-<p>We constantly improve campaigns to reduce cost per lead.</p>
+<h3>Ongoing Optimization</h3>
+<p>Continuous improvements to lower cost per acquisition.</p>
 </div>
 
 <div class="card">
-<h3>ROI-Focused Approach</h3>
-<p>Our campaigns are built to maximize profitability.</p>
+<h3>Transparent Reporting</h3>
+<p>Clear insights into campaign performance and growth.</p>
 </div>
 </div>
 
 </div>
 </section>
 
+<!-- FORM -->
 <section id="form" class="form-section">
 <div class="container">
-<div class="form-container">
-<h2 style="text-align:center;margin-bottom:25px;">Get Your Free Google Ads Audit</h2>
+<div class="form-box">
+<h2 style="text-align:center;margin-bottom:25px;">Request Your Free Google Ads Audit</h2>
 
 <form onsubmit="alert('Thank you! We will contact you shortly.');">
 <input type="text" placeholder="Full Name" required>
@@ -231,12 +286,16 @@ text-decoration:none;
 </form>
 
 <p style="margin-top:15px;text-align:center;font-size:14px;">
-Or call us directly at <strong>+1 475-237-7127</strong>
+Or call directly at <strong>+1 475-237-7127</strong>
 </p>
 
 </div>
 </div>
 </section>
+
+<footer>
+<p>© 2026 TheCodexive. All Rights Reserved.</p>
+</footer>
 
 <a href="tel:+14752377127" class="sticky-call">📞 Call Now +1 475-237-7127</a>
 
